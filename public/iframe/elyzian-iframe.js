@@ -6,9 +6,9 @@
   iframe.style.position = 'fixed';
   iframe.style.right = '0px';
   iframe.style.bottom = '0px';
-  iframe.style.width = '300px';
-  iframe.style.height = '200px';
-  iframe.style.zIndex = '1000000000';
+  iframe.style.width = '336px';
+  iframe.style.height = '320px';
+  iframe.style.zIndex = '2147483001 !important';
   iframe.style.border = 'none';
   
   // append the iframe to the container div
@@ -58,7 +58,7 @@
   iframe.style.bottom = '0px';
   iframe.style.width = '100%';
   iframe.style.height = '100%';
-  iframe.style.zIndex = '2000000000';
+  iframe.style.zIndex = '2147483001 !important';
   iframe.style.border = 'none';
   
   // append the iframe to the container div

@@ -8,7 +8,7 @@
   iframe.style.bottom = '0px';
   iframe.style.width = '336px';
   iframe.style.height = '320px';
-  iframe.style.zIndex = '2147483001 !important';
+  iframe.style.zIndex = '2147483001';
   iframe.style.border = 'none';
   
   // append the iframe to the container div
@@ -43,8 +43,10 @@
   // set the iframe size to normal
   function toggleNormalIframeSize() {
     var chatbotIframe = document.getElementById('chatbot-iframe');
-    chatbotIframe.style.width = '300px';
-    chatbotIframe.style.height = '200px';
+    // chatbotIframe.style.width = '300px';
+    // chatbotIframe.style.height = '200px';
+    chatbotIframe.style.width = '336px';
+    chatbotIframe.style.height = '320px';
   }
 })();
 
@@ -58,7 +60,7 @@
   iframe.style.bottom = '0px';
   iframe.style.width = '100%';
   iframe.style.height = '100%';
-  iframe.style.zIndex = '2147483001 !important';
+  iframe.style.zIndex = '2147483001';
   iframe.style.border = 'none';
   
   // append the iframe to the container div

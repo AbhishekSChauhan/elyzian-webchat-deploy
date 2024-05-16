@@ -67,34 +67,26 @@
   
   // add event listener to the window object
   window.addEventListener('message', function(event) {
-    if (event.data === 'toggle-iframe-size') {
-      toggleIframeSize();
-      console.log('Received toggle-iframe-size message from child iframe');
-    } else if (event.data === 'toggle-normal-iframe-size') {
-      toggleNormalIframeSize();
+    if (event.data === 'close-signup-iframe') {
+      closeSignupIframe();
+      console.log('Received close-signup-iframe message from child iframe(i.e. signup component)');
+    } else if (event.data === 'open-signup-iframe') {
+      openSingupIframe();
       console.log('Received toggle-normal-iframe-size message from child iframe');
-    } else if(event.data === 'close-on-click-outside') {
-      console.log('Received close-on-click-outside message from child iframe====');
     }
   });
   
   // toggle the iframe size
-  function toggleIframeSize() {
+  function closeSignupIframe() {
     var signupIframe = document.getElementById('signup-iframe');
-    if (window.innerWidth < 600) {
-      signupIframe.style.width = '100%';
-      signupIframe.style.height = '100%';
-    } else {
-      signupIframe.style.width = '100%';
-      signupIframe.style.height = '100%'; 
-    }
+    signupIframe.style.width = '0px';
+    signupIframe.style.height = '0px'; 
   }
   
   // set the iframe size to normal
-  function toggleNormalIframeSize() {
+  function openSingupIframe() {
     var signupIframe = document.getElementById('signup-iframe');
-    signupIframe.style.width = '0px';
-    signupIframe.style.height = '0px';
+    signupIframe.style.width = '100%';
+    signupIframe.style.height = '100%';
   }
 })();
-

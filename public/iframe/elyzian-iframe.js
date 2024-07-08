@@ -97,7 +97,7 @@
   // create the iframe element
   var iframe = document.createElement('iframe');
   iframe.setAttribute('id', 'chatbot-iframe');
-  iframe.setAttribute('srcdoc', '<!DOCTYPE html><html><head><link href="https://dev-webchat.elyzian.in/css/webchat" rel="stylesheet"></head><body><div id="sc-webchat"></div><script defer="" type="text/javascript" src="https://dev-webchat.elyzian.in/js/webchat/companyId"></script></body></html>');
+  iframe.setAttribute('srcdoc', '<!DOCTYPE html><html><head><link href="https://dev-webchat.elyzian.in/css/webchat" rel="stylesheet"></head><body><div id="elz-webchat"></div><script defer="" type="text/javascript" src="https://dev-webchat.elyzian.in/js/webchat/companyId"></script></body></html>');
   iframe.style.position = 'fixed';
   iframe.style.right = '0px';
   iframe.style.bottom = '0px';
@@ -107,7 +107,7 @@
   iframe.style.border = 'none';
   
   // append the iframe to the container div
-  var container = document.getElementById('salescaptain-webchat');
+  var container = document.getElementById('elyzian-webchat');
   container.appendChild(iframe);
   
   // add event listener to the window object

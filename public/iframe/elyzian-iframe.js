@@ -102,7 +102,7 @@
   iframe.style.right = '0px';
   iframe.style.bottom = '0px';
   iframe.style.width = '336px';
-  iframe.style.height = '320px';
+  iframe.style.height = '325px';
   iframe.style.zIndex = '2147483001';
   iframe.style.border = 'none';
   
